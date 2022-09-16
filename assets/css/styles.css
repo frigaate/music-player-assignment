@@ -1,0 +1,178 @@
+:root{
+    --white-color: rgb(255, 253, 253);
+    --dark-color: rgb(75, 7, 7);
+    --light-color: rgb(180, 172, 172);
+    --primary-color: rgb(212, 69, 69);
+    /* background-color: var(--primary-color); */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+svg{
+    margin: 0;
+    padding: 0;
+    fill: var(--light-color);
+}
+
+.top-container{
+    width: 350px;
+    border-radius: 40px;
+    background-color: var(--dark-color);
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top{
+    padding: 30px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    margin-bottom: 7px;
+}
+
+.main-container{
+    width: 100%;
+    height: 590px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(212, 69, 69, 1) 10%,  rgba(243, 234, 234, 0.9) 60%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.album-cover{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 25px;
+}
+.image-wrapper{
+    width: 200px;
+    height: 200px;
+}
+.image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9999px;
+}
+
+.content{
+    width: 100%;
+    padding: 20px 0; 
+}
+
+.music-name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    width: auto;
+}
+
+.name h2, .name h4{
+    margin: 10px 0;
+}
+
+.reaction{
+    width: 40px;
+    margin-top: 20px;
+}
+
+.song-play{
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar{
+    margin-top: 50px;
+    position: relative;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    margin: 2px 5px;
+    background-color: var(--light-color);
+}
+
+.progress-bar span{
+    position: absolute;
+    display: inline-block;
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 4px;
+}
+
+.progress-bar .play-position{
+    background-color: var(--white-color);
+    height: 15px;
+    width: 15px;
+    border-radius: 6px;
+    position: absolute;
+    top: -6px;
+    left: 120px;
+}
+
+.time{
+    color: var(--dark-color);
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.main svg{
+    fill: var(--dark-color);
+    height: 2rem;
+    width: 2rem;
+}
+
+.pause{
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause svg {
+    fill: var(--white-color);
+}
+
+.lyrics{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
